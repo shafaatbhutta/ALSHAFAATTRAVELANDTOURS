@@ -8,3 +8,64 @@
 </div>
 <footer>© 2026 Al Shafaat Travel & Tours | All Rights Reserved</footer>
 </body></html>
+<section class="packages">
+<h2>Our Travel Packages</h2>
+
+<div class="package-card">
+<h3>🕋 Economy Umrah Package</h3>
+<p>Affordable Umrah Package with Hotel & Transport.</p>
+</div>
+
+<div class="package-card">
+<h3>⭐ VIP Umrah Package</h3>
+<p>Luxury Hotels near Haram with Premium Services.</p>
+</div>
+​
+
+<div class="package-card">
+<h3>🇹🇷 Turkey Tour</h3>
+<p>7 Days Istanbul Tour Package.</p>
+</div>
+
+<div class="package-card">
+<h3>🇦🇪 Dubai Tour</h3>
+<p>Dubai Visit Visa + Hotel + Airport Transfer.</p>
+</div>
+</section>
+
+<section class="reviews">
+<h2>Customer Reviews</h2>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Excellent Umrah service and great support.</p>
+<b>Ahmed Khan</b>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Fast visa processing and professional staff.</p>
+<b>Ali Raza</b>
+</div>
+</section>
+
+<section class="booking">
+<h2>Book Your Service</h2>
+
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="email" placeholder="Email Address">
+
+<select>
+<option>Umrah Visa</option>
+<option>Visit Visa</option>
+<option>Tourist Visa</option>
+<option>Air Ticket</option>
+</select>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Submit Request</button>
+</form>
+</section>
