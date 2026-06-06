@@ -5,6 +5,365 @@
 <div class="card"><h2>About Us</h2><p>Al Shafaat Travel & Tours provides Umrah Visa, Tourist Visa,Visit Visa, Air Tickets and Travel Services at affordable prices.We are committed to making your journey easy and comfortable.</p></div>
 <div class="card"><h2>Our Services</h2><ul><li> Umrah Visa</li><li> All Country Visas</li><li> International & Domestic Air Tickets</li><li> Hotel Booking</li><li> Travel Assistance</li></ul></div>
 <div class="card"><h2>Contact Us</h2><p><strong>Office:</strong> Office No. 14, College Plaza, Kutchery Road, Multan, Pakistan</p><p><strong>Phone:</strong> 03008631549</p><p><strong>WhatsApp:</strong> 03008631549</p><a class="btn" href="https://wa.me/923008631549">Chat on WhatsApp</a></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL SHAFAAT TRAVEL & TOURS</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,43,107,.75),rgba(0,43,107,.75)),
+url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:#fff;
+position:relative;
+overflow:hidden;
+padding:20px;
+}
+
+.logo{
+width:180px;
+border-radius:20px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#d4af37;
+color:white;
+padding:15px 35px;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.plane{
+position:absolute;
+font-size:60px;
+top:20%;
+left:-100px;
+animation:fly 12s linear infinite;
+}
+
+@keyframes fly{
+from{left:-100px;}
+to{left:110%;}
+}
+
+section{
+padding:80px 20px;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+color:#002b6b;
+margin-bottom:40px;
+}
+
+.services,
+.packages,
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.card h3{
+color:#002b6b;
+margin-bottom:15px;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+line-height:1.8;
+}
+
+.search-form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.search-form input,
+.search-form select{
+padding:15px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+.search-form button{
+padding:15px;
+border:none;
+background:#002b6b;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.contact{
+background:#002b6b;
+color:white;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+.map{
+width:100%;
+height:350px;
+border:0;
+border-radius:15px;
+margin-top:20px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#25D366;
+color:white;
+font-size:30px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+z-index:999;
+}
+
+footer{
+background:#001b44;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+<div>
+<img src="logo.png" class="logo" alt="Logo">
+
+<h1>AL SHAFAAT TRAVEL & TOURS</h1>
+
+<p>
+Air Tickets • Umrah Packages • Visa Services
+</p>
+
+<a href="https://wa.me/923008631549" class="btn">
+Book Now
+</a>
 </div>
-<footer>© 2026 Al Shafaat Travel & Tours | All Rights Reserved</footer>
+
+<div class="plane">✈️</div>
+</header>
+
+<section>
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>✈ Air Tickets</h3>
+<p>Domestic & International Flight Booking</p>
+</div>
+
+<div class="card">
+<h3>🕋 Umrah Packages</h3>
+<p>Affordable Umrah Packages</p>
+</div>
+
+<div class="card">
+<h3>📄 Visa Services</h3>
+<p>Saudi, UAE & Worldwide Visas</p>
+</div>
+
+<div class="card">
+<h3>🏨 Hotel Booking</h3>
+<p>Worldwide Hotel Reservations</p>
+</div>
+
+<div class="card">
+<h3>🚘 Transport</h3>
+<p>Airport Pick & Drop Service</p>
+</div>
+
+<div class="card">
+<h3>🌍 Tour Packages</h3>
+<p>International & Domestic Tours</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="title">Search Air Fare</h2>
+
+<form class="search-form">
+
+<input type="text" placeholder="From City">
+
+<input type="text" placeholder="To City">
+
+<input type="date">
+
+<input type="date">
+
+<select>
+<option>Economy</option>
+<option>Business</option>
+<option>First Class</option>
+</select>
+
+<button type="submit">
+Search Fare
+</button>
+
+</form>
+</section>
+
+<section>
+<h2 class="title">About Us</h2>
+
+<div class="about">
+AL SHAFAAT TRAVEL & TOURS provides reliable travel solutions including Air Tickets, Umrah Packages, Hotel Reservations and Visa Services at competitive prices.
+</div>
+</section>
+
+<section>
+<h2 class="title">Popular Packages</h2>
+
+<div class="packages">
+
+<div class="card">
+<h3>Economy Umrah</h3>
+<p>Visa + Hotel + Transport</p>
+</div>
+
+<div class="card">
+<h3>VIP Umrah</h3>
+<p>Luxury Hotels & Premium Services</p>
+</div>
+
+<div class="card">
+<h3>Saudi Visit Visa</h3>
+<p>Fast Processing</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="title">Customer Reviews</h2>
+
+<div class="reviews">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Excellent Service & Affordable Prices</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Best Umrah Experience</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<p>Quick Visa Processing</p>
+</div>
+
+</div>
+</section>
+
+<section class="contact">
+
+<h2 class="title" style="color:white;">
+Contact Us
+</h2>
+
+<p>📞 0300-8631549</p>
+<p>📞 0315-6322001</p>
+
+<p>
+📍 Office No. 14, College Plaza,
+Kutchery Road, Multan, Pakistan
+</p>
+
+<iframe
+class="map"
+src="https://maps.google.com/maps?q=Multan&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+<br><br>
+
+<a href="https://wa.me/923008631549" class="btn">
+WhatsApp Now
+</a>
+
+</section>
+
+<footer>
+© 2026 AL SHAFAAT TRAVEL & TOURS | All Rights Reserved
+</footer>
+
+<a href="https://wa.me/923008631549" class="whatsapp">
+💬
+</a>
+
+</body>
+</html><footer>© 2026 Al Shafaat Travel & Tours | All Rights Reserved</footer>
 </body></html>
