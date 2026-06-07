@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL SHAFAAT TRAVEL & TOURS</title>
+
+<header>
+    <img src="logo.png" alt="AL SHAFAAT TRAVEL & TOURS" class="logo">
+
+    <h1>AL SHAFAAT TRAVEL & TOURS</h1>
+
+    <p>Your Trusted Travel Partner</p>
+</header>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;.hero{
+background:
+linear-gradient(rgba(11,45,107,.80),
+rgba(11,45,107,.80)),
+url('logo.png');
+
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+}
+}
+
+/* HEADER */
+
+header{
+background:#fff;
+padding:20px;
+text-align:center;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.logo{
+width:280px;
+max-width:90%;
+}
+
+/* HERO */
+
+.hero{
+height:500px;
+background:
+linear-gradient(rgba(11,45,107,.75),
+rgba(11,45,107,.75)),
+url('logo.png');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#D4A537;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* SECTION */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
+}
+
+.section-title{
+text-align:center;
+color:#0B2D6B;
+margin-bottom:30px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.card h3{
+color:#0B2D6B;
+margin-bottom:10px;
+}
+
+/* FLIGHT FORM */
+
+.flight-form{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.flight-form input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.flight-form button{
+width:100%;
+padding:14px;
+background:#D4A537;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+/* CONTACT */
+
+.contact{
+background:#0B2D6B;
+color:white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+}
+
+.contact h2{
+color:#D4A537;
+margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+background:#0B2D6B;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+height:auto;
+padding:100px 20px;
+}
+
+.hero-content h1{
+font-size:32px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.logo{
+width:180px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.png" class="logo" alt="AL SHAFAAT TRAVEL & TOURS">
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>AL SHAFAAT TRAVEL & TOURS</h1>
+<p>Your Trusted Travel Partner</p>
+
+<a href="https://wa.me/923008631549" class="btn">
+Book Now On WhatsApp
+</a>
+</div>
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>🕋 Umrah Visa</h3>
+<p>Affordable Umrah Packages</p>
+</div>
+
+<div class="card">
+<h3>🌍 All Country Visas</h3>
+<p>Fast Visa Processing</p>
+</div>
+
+<div class="card">
+<h3>✈ Air Tickets</h3>
+<p>International & Domestic Flights</p>
+</div>
+
+<div class="card">
+<h3>🏨 Hotel Booking</h3>
+<p>Best Hotel Deals Worldwide</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h2 class="section-title">Flight Search</h2>
+
+<div class="flight-form">
+
+<input type="text" placeholder="From City">
+
+<input type="text" placeholder="To City">
+
+<input type="date">
+
+<button>Search Flight</button>
+
+</div>
+
+<br><br>
+
+<div class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Office No.14, College Plaza, Kutchery Road, Multan Pakistan</p>
+
+<br>
+
+<p>📞 0300-8631549</p>
+<p>📞 0315-6322001</p>
+
+<br>
+
+<a href="https://wa.me/923008631549" class="btn">
+Chat On WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 AL SHAFAAT TRAVEL & TOURS
+</footer>
+
+<a href="https://wa.me/923008631549" class="whatsapp">💬</a>
+
+</body>
+</html>
