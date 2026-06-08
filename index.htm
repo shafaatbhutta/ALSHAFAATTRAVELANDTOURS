@@ -7,251 +7,364 @@
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
-background:#f5f5f5;
+    background:#f4f6fa;
+    color:#333;
 }
 
+/* Navigation */
+.navbar{
+    background:#002b6b;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:#d4af37;
+}
+
+/* Header */
 header{
-background:white;
-padding:20px;
-text-align:center;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+    background:linear-gradient(rgba(0,43,107,.8),rgba(0,43,107,.8)),
+    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
 }
 
-.logo{
-width:250px;
-max-width:90%;
-}
-
-.hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,32,96,.7),rgba(0,32,96,.7)),
-url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
+.hero img{
+    width:220px;
+    border-radius:20px;
+    margin-bottom:20px;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:15px;
+    font-size:50px;
+    margin-bottom:10px;
 }
 
 .hero p{
-font-size:22px;
-margin-bottom:20px;
+    font-size:22px;
+    margin-bottom:25px;
 }
 
 .btn{
-background:#D4A537;
-color:white;
-padding:14px 30px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-display:inline-block;
+    display:inline-block;
+    padding:15px 35px;
+    background:#d4af37;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
 }
 
-.menu{
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-padding:20px;
-background:white;
+section{
+    padding:80px 20px;
 }
 
-.menu a{
-background:#0B2D6B;
-color:white;
-padding:12px 20px;
-border-radius:30px;
-text-decoration:none;
+.title{
+    text-align:center;
+    font-size:36px;
+    color:#002b6b;
+    margin-bottom:40px;
 }
 
-.section{
-max-width:1100px;
-margin:auto;
-padding:50px 20px;
+.services,
+.packages{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-margin-bottom:20px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+.card,
+.package{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+    transition:.3s;
 }
 
-input,select{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:1px solid #ddd;
-border-radius:8px;
+.card:hover,
+.package:hover{
+    transform:translateY(-8px);
 }
 
-button{
-width:100%;
-padding:14px;
-background:#D4A537;
-border:none;
-color:white;
-border-radius:8px;
-font-size:16px;
-cursor:pointer;
+.card h3,
+.package h3{
+    color:#002b6b;
+    margin-bottom:15px;
 }
 
+.package span{
+    font-size:28px;
+    font-weight:bold;
+    color:#d4af37;
+    display:block;
+    margin:15px 0;
+}
+
+.about{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Contact */
 .contact{
-background:#0B2D6B;
-color:white;
-padding:40px;
-text-align:center;
-border-radius:15px;
+    background:#002b6b;
+    color:white;
+    text-align:center;
+}
+
+.contact p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/* Search Form */
+.search-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.search-form input,
+.search-form select{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.search-form button{
+    background:#002b6b;
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.search-form button:hover{
+    background:#d4af37;
 }
 
 footer{
-background:#0B2D6B;
-color:white;
-text-align:center;
-padding:20px;
+    background:#001b44;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:15px 18px;
-border-radius:50%;
-text-decoration:none;
-font-size:24px;
+iframe{
+    border:0;
+    border-radius:15px;
 }
 
+/* Mobile */
 @media(max-width:768px){
-.hero h1{
-font-size:32px;
-}
-.hero p{
-font-size:18px;
-}
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .navbar a{
+        display:block;
+        margin:10px 0;
+    }
 }
 </style>
 </head>
+
 <body>
 
-<header>
-<img src="logo.png" class="logo" alt="AL SHAFAAT TRAVEL & TOURS">
-</header>
-
-<section class="hero">
-
-<div>
-
-<h1>AL SHAFAAT TRAVEL & TOURS</h1>
-
-<p>Your Trusted Travel Partner</p>
-
-<a href="https://wa.me/923008631549" class="btn">
-Book On WhatsApp
-</a>
-
-</div>
-
-</section>
-
-<nav class="menu">
-
-<a href="#home">🏠 Home</a>
-
-<a href="#umrah">🕋 Umrah</a>
-
-<a href="#visa">🌍 Visa</a>
-
-<a href="#flight">✈ Flights</a>
-
-<a href="#contact">💬 Contact</a>
-
+<nav class="navbar">
+    <a href="#flight-search">Flights</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<div class="section">
+<header>
+    <div class="hero">
+        <img src="logo.png" alt="AL SHAFAAT Logo">
+        <h1>AL SHAFAAT TRAVEL & TOURS</h1>
+        <p>Your Trusted Travel Partner</p>
+        <a href="https://wa.me/923008631549" class="btn">Book Now</a>
+    </div>
+</header>
 
-<div class="card" id="flight">
+<section>
+    <h2 class="title">Our Services</h2>
 
-<h2>✈ Flight Fare Search</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Air Tickets</h3>
+            <p>Domestic & International Flight Booking</p>
+        </div>
 
-<input type="text" placeholder="From City">
+        <div class="card">
+            <h3>Umrah Packages</h3>
+            <p>Affordable Umrah Packages Available</p>
+        </div>
 
-<input type="text" placeholder="To City">
+        <div class="card">
+            <h3>Visa Services</h3>
+            <p>Saudi Arabia, UAE & All Countries Visa</p>
+        </div>
 
-<input type="date">
+        <div class="card">
+            <h3>Hotel Booking</h3>
+            <p>Worldwide Hotel Reservations</p>
+        </div>
 
-<select>
-<option>Economy</option>
-<option>Business</option>
-<option>First Class</option>
-</select>
+        <div class="card">
+            <h3>Transport</h3>
+            <p>Airport Pick & Drop Services</p>
+        </div>
 
-<button>Search Flight</button>
+        <div class="card">
+            <h3>Tour Packages</h3>
+            <p>International & Domestic Tours</p>
+        </div>
+    </div>
+</section>
 
-</div>
+<section>
+    <h2 class="title">About Us</h2>
 
-<div class="card" id="umrah">
+    <div class="about">
+        <p>
+            AL SHAFAAT TRAVEL & TOURS is a trusted travel agency in
+            Multan, Pakistan. We provide Umrah Packages, Air Tickets,
+            Visa Services, Hotel Reservations and International Travel
+            Solutions at affordable prices.
+        </p>
+    </div>
+</section>
 
-<h2>🕋 Umrah Packages</h2>
+<section>
+    <h2 class="title">Popular Packages</h2>
 
-<p>Economy Package</p>
-<p>Deluxe Package</p>
-<p>VIP 5 Star Package</p>
+    <div class="packages">
+        <div class="package">
+            <h3>Economy Umrah</h3>
+            <span>Contact Us</span>
+            <p>Hotel + Visa + Transport</p>
+        </div>
 
-</div>
+        <div class="package">
+            <h3>VIP Umrah</h3>
+            <span>Contact Us</span>
+            <p>Luxury Hotels & Premium Services</p>
+        </div>
 
-<div class="card" id="visa">
+        <div class="package">
+            <h3>Saudi Visit Visa</h3>
+            <span>Fast Processing</span>
+            <p>Quick & Easy Visa Service</p>
+        </div>
+    </div>
+</section>
 
-<h2>🌍 Visa Services</h2>
+<section id="flight-search">
+    <h2 class="title">Search Air Fare</h2>
 
-<p>Saudi Arabia Visa</p>
-<p>UAE Visa</p>
-<p>Turkey Visa</p>
-<p>UK Visa</p>
-<p>Europe Visa</p>
+    <form class="search-form">
+        <input type="text" placeholder="From City" required>
+        <input type="text" placeholder="To City" required>
+        <input type="date" required>
+        <input type="date">
+        <select>
+            <option>Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+        </select>
 
-</div>
+        <button type="submit">Search Fare</button>
+    </form>
+</section>
 
-<div class="contact" id="contact">
+<section id="reviews">
+    <h2 class="title">Customer Reviews</h2>
 
-<h2>Contact Us</h2>
+    <div class="services">
+        <div class="card">
+            <p>Excellent Umrah Service. Highly Recommended.</p>
+            <h4>- Ahmed Khan</h4>
+        </div>
 
-<p>Office No.14 College Plaza, Kutchery Road, Multan</p>
+        <div class="card">
+            <p>Very Affordable Air Tickets and Visa Service.</p>
+            <h4>- Usman Ali</h4>
+        </div>
 
-<p>📞 0300-8631549</p>
+        <div class="card">
+            <p>Best Travel Agency in Multan.</p>
+            <h4>- Muhammad Bilal</h4>
+        </div>
+    </div>
+</section>
 
-<p>📞 0315-6322001</p>
+<section>
+    <h2 class="title">Our Location</h2>
 
-</div>
+    <iframe
+        src="https://maps.google.com/maps?q=Multan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="350">
+    </iframe>
+</section>
 
-</div>
+<section id="contact" class="contact">
+    <h2 class="title" style="color:white;">Contact Us</h2>
+
+    <p>📞 0300-8631549</p>
+    <p>📞 0315-6322001</p>
+    <p>📍 Office No. 14, College Plaza, Kutchery Road, Multan, Pakistan</p>
+
+    <br>
+
+    <a href="https://wa.me/923008631549" class="btn">
+        WhatsApp Now
+    </a>
+</section>
 
 <footer>
-
-© 2026 AL SHAFAAT TRAVEL & TOURS
-
+    © 2026 AL SHAFAAT TRAVEL & TOURS | All Rights Reserved
 </footer>
-
-<a href="https://wa.me/923008631549" class="whatsapp">💬</a>
 
 </body>
 </html>
