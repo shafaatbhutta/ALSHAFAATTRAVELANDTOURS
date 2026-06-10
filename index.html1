@@ -1,0 +1,25 @@
+<header class="hero">
+    <div class="logo-container">
+        <img src="images/logo.png" alt="AL SHAFAAT TRAVEL AND TOUR" class="logo">
+    </div>
+
+    <h1>AL SHAFAAT TRAVEL AND TOUR</h1>
+
+    <p class="tagline">
+        Your Trusted Partner for Umrah, Hajj, Visa & International Travel Services
+    </p>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#packages">Umrah Packages</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <a href="https://wa.me/923001234567" class="whatsapp-btn">
+        WhatsApp Us
+    </a>
+</header>
